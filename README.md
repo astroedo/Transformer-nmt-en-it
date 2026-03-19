@@ -111,12 +111,10 @@ Beam search explores *k* partial hypotheses in parallel and scores completed seq
 
 | Decoding | Corpus BLEU |
 |---|---|
-| Greedy (k=1) | — |
-| Beam (k=2) | — |
-| Beam (k=4) | — |
-| Beam (k=8) | — |
-
-> Fill in the BLEU scores after running the evaluation cells.
+| Greedy (k=1) | 0.0182 |
+| Beam (k=2) | 0.0253 |
+| Beam (k=4) | 0.0202 |
+| Beam (k=8) | 0.0176 |
 
 ---
 
