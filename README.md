@@ -120,17 +120,17 @@ Beam search explores *k* partial hypotheses in parallel and scores completed seq
 
 ## Analysis
 
-### Embedding Space (t-SNE)
-
-The shared embedding matrix organises words by grammatical role and semantic field — pronouns, time expressions, and verbs cluster separately even without explicit supervision.
-
-![Embedding t-SNE](assets/tsne_embeddings.png)
-
 ### Attention Visualisation
 
 Cross-attention weights reveal the alignment the model learns between source and target tokens. Monotonic diagonal patterns are typical for closely related language pairs like EN–IT.
 
-![Cross-Attention](assets/cross_attention.png)
+**Cross-attention across 3 sentences (Layer 3, Head 1)** — shows the model generalises the same alignment strategy across different sentence structures.
+
+![Cross-Attention Comparison](assets/cross_attention_comparison.png)
+
+**All 4 heads in the last decoder layer** — each head learns a slightly different alignment pattern, collectively covering the full source context.
+
+![Cross-Attention All Heads](assets/cross_attention_heads.png)
 
 ---
 
