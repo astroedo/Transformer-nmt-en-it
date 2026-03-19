@@ -103,8 +103,6 @@ $$\text{LR} = d_{\text{model}}^{-0.5} \cdot \min\!\left(\text{step}^{-0.5},\ \te
 
 ![Training and Validation Loss](assets/loss_curve.png)
 
-![Token Accuracy](assets/accuracy_curve.png)
-
 ### Greedy vs Beam Search (Corpus BLEU)
 
 Beam search explores *k* partial hypotheses in parallel and scores completed sequences with length normalisation (α = 0.6), consistently outperforming greedy argmax decoding.
